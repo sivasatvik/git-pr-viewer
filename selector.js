@@ -3,14 +3,31 @@
  * from the dropdownbox.
  */
 function listenForChange(){
-    var dropdownSelect = document.querySelector('.switch');
-    dropdownSelect.addEventListener('change', (event) => {
+    var collapseSelect = document.querySelector('.collapse');
+    collapseSelect.addEventListener('click', (event) => {
 
         function tabify(tabs){
-            console.log("Checked: " + event.target.checked)
-            let val = event.target.checked;
+            console.log("Clicked collapse");
+            let val = 1;
             browser.tabs.sendMessage(tabs[0].id, {
-                command: "tabify",
+                command: "tabify-collapse",
+                value: val
+            });
+        }
+
+        browser.tabs.query({active: true, currentWindow: true})
+        .then(tabify);
+
+    });
+
+    var expandSelect = document.querySelector('.expand');
+    expandSelect.addEventListener('click', (event) => {
+
+        function tabify(tabs){
+            console.log("Clicked expand");
+            let val = 1;
+            browser.tabs.sendMessage(tabs[0].id, {
+                command: "tabify-expand",
                 value: val
             });
         }

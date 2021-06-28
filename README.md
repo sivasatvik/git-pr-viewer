@@ -1,5 +1,5 @@
 # Git PR Viewer
-> Firefox extension for collapsing all expanded files in Github PR page.
+> Firefox extension for collapsing all expanded files and expanding all collapsed files in Github PR page.
 
 ## Installation
 
@@ -7,6 +7,6 @@ Install it from [Firefox ADD-ONS store](https://addons.mozilla.org/en-US/firefox
 
 ## Working
 
-Any and all expanded files in Github PR page will close when the checkbox is enabled.
+One button is to collapse all expanded files and another option is to expand all collapsed files in Github PR page.
 
 ![](ss.png)

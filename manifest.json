@@ -2,9 +2,9 @@
 
     "manifest_version": 2,
     "name": "GitPRViewer",
-    "version": "1.0",
+    "version": "1.1",
 
-    "description": "Collapse all expanded files in Github PR page.",
+    "description": "Collapse or expand all files in Github PR page.",
 
     "icons": {
         "128": "icon.png"
